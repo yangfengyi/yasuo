@@ -1,0 +1,38 @@
+{
+  "name": "yasuo",
+  "version": "1.0.0",
+  "description": "Performance monitoring SDK, name yasuo!",
+  "main": "publish/yasuo.js",
+  "types": "dist/typings/index.d.ts",
+  "source": "src/yasuo.ts",
+  "unpkg": "publish/yasuo.umd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "demo": "npx parcel ./examples/index.html",
+    "dev": "microbundle --watch",
+    "build": "npm run clean && microbundle",
+    "clean": "rimraf publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangfengyi/performance-monitor.git"
+  },
+  "keywords": [
+    "typeScript",
+    "performance",
+    "error trace",
+    "lol"
+  ],
+  "author": "yangfengyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yangfengyi/performance-monitor/issues"
+  },
+  "homepage": "https://github.com/yangfengyi/performance-monitor#readme",
+  "devDependencies": {
+    "microbundle": "^0.14.2",
+    "parcel-bundler": "^1.12.5",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.6.3"
+  }
+}
